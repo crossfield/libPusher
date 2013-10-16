@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'libPusher'
-  s.version      = '1.4'
+  s.version      = '1.5'
   s.license      = 'MIT'
   s.summary      = 'An Objective-C client for the Pusher.com service'
   s.homepage     = 'https://github.com/lukeredpath/libPusher'
@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'git://github.com/lukeredpath/libPusher.git', :tag => 'v1.4' }
   s.source_files = 'Library/*'
   s.requires_arc = true
+  s.xcconfig     = { 'GCC_PREPROCESSOR_DEFINITIONS' => %{$(inherited) kPTPusherClientLibraryVersion="@\\"#{s.version}\\""} }
   s.dependency 'SocketRocket'
 end
