@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = 'An Objective-C client for the Pusher.com service'
   s.homepage     = 'https://github.com/lukeredpath/libPusher'
   s.author       = 'Luke Redpath'
-  s.source       = { :git => 'git://github.com/lukeredpath/libPusher.git' }
+  s.source       = { :git => 'git://github.com/jeanregisser/libPusher.git' }
   s.source_files = 'Library/*'
   s.requires_arc = true
   s.xcconfig     = { 'GCC_PREPROCESSOR_DEFINITIONS' => %{$(inherited) kPTPusherClientLibraryVersion="@\\"#{s.version}\\""} }
